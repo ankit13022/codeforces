@@ -3,5 +3,6 @@
     "xiosbase": "cpp",
     "iostream": "cpp",
     "xstring": "cpp"
-  }
+  },
+  "C_Cpp.errorSquiggles": "disabled"
 }
