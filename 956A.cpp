@@ -16,6 +16,13 @@ using namespace std;
 
 void ankit7890()
 {
+    int n;
+    cin >> n;
+    for (int i = 1; i <= n; i++)
+    {
+        cout << i << " ";
+    }
+    cout << endl;
 }
 
 int main()
