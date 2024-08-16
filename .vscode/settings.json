@@ -3,7 +3,9 @@
     "xiosbase": "cpp",
     "iostream": "cpp",
     "xstring": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "map": "cpp",
+    "unordered_map": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
