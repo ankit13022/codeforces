@@ -21,9 +21,15 @@ void ankit7890()
 {
     int n;
     cin >> n;
-    int x, y;
-    cin >> x >> y;
-    cout << (n + min(x, y) - 1) / min(x, y) << '\n';
+    int a[n];
+    long long s = 0;
+    for (int i = 0; i < n; i++)
+    {
+        cin >> a[i];
+        s += a[i];
+    }
+    s -= (2 * a[n - 2]);
+    cout << s << endl;
 }
 
 int main()
