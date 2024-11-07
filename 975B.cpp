@@ -22,7 +22,6 @@ void ankit7890()
 {
     int n;
     cin >> n;
-
     int q;
     cin >> q;
 
