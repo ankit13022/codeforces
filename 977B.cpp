@@ -17,6 +17,8 @@ using namespace std;
 
 void ankit7890()
 {
+    int n;
+    cin >> n;
 }
 
 int main()
