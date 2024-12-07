@@ -17,8 +17,34 @@ using namespace std;
 
 void ankit7890()
 {
-    int n;
-    cin >> n;
+    long long n, d;
+    cin >> n >> d;
+    vector<long long> f(n + 1, 0);
+
+    for (long long i = 0; i < n; ++i)
+    {
+        long long x;
+        cin >> x;
+        if (x <= n)
+        {
+            f[x]++;
+        }
+    }
+
+    long long r = 0;
+    for (; r <= n; ++r)
+    {
+        if (f[r] == 0)
+        {
+            break;
+        }
+        if (r + d <= n)
+        {
+            f[r + d] += f[r] - 1;
+        }
+    }
+
+    cout << r << '\n';
 }
 
 int main()
