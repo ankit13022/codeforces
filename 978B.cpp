@@ -17,20 +17,22 @@ using namespace std;
 #define mp make_pair
 #define um unordered_map
 #define mod 1000000007
-
 void ankit7890()
 {
-    ll n, k, sum = 0;
+    ll n, k;
     cin >> n >> k;
-    vll v(n);
-    for (auto &i : v)
-        cin >> i, sum += i;
-    sort(all(v));
-    ll x = (sum + k - 1) / k;
-    if (x > v[n - 1])
-        cout << x << nl;
-    else
-        cout << v[n - 1] << nl;
+    vector<ll> a(n);
+
+    ll int sum = 0, ma = 0;
+    ;
+
+    for (int i = 0; i < n; i++)
+    {
+        cin >> a[i];
+        sum += a[i];
+        ma = max(ma, a[i]);
+    }
+    cout << max(ma, (sum + k - 1) / k) << endl;
 }
 
 int main()
