@@ -20,6 +20,7 @@ using namespace std;
 
 void ankit7890()
 {
+    int n;
     cin >> n;
     int minx = 10000, maxx = -10000;
     for (int i = 0; i < n; i++)
