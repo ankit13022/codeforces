@@ -20,6 +20,17 @@ using namespace std;
 
 void ankit7890()
 {
+    string s;
+    cin >> s;
+    for (ll i = 0; i < s.size() - 1; i++)
+    {
+        if (s[i] == s[i + 1])
+        {
+            cout << "1";
+            return;
+        }
+    }
+    cout << s.size();
 }
 
 int main()
