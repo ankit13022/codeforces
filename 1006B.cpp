@@ -22,13 +22,28 @@ void ankit7890()
 {
     int n;
     string s;
+
     cin >> n >> s;
-    int cnt = 0;
-    for (int i = 0; i < n; i++)
+
+    int cnt1 = 0;
+    int cnt2 = 0;
+
+    for (int i = 0; i < s.size(); i++)
     {
-        cnt += (s[i] == '-');
+        if (s[i] == '_')
+            cnt1++;
+        else
+            cnt2++;
     }
-    cout << (cnt / 2) * (cnt - cnt / 2) * (n - cnt) << "\n";
+
+    if (cnt2 < 2 || cnt1 == 0)
+        cout << 0 << endl;
+    else
+    {
+        int res = cnt2 / 2;
+
+        cout << (ll)res * cnt1 * (cnt2 - res) << endl;
+    }
 }
 
 int main()
