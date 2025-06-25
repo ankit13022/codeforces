@@ -2,14 +2,6 @@
 #include <vector>
 #include <iostream>
 #include <cmath>
-#include <string>
-#include <bitset>
-#include <cstring>
-#include <algorithm>
-#include <numeric>
-#include <unordered_set>
-#include <map>
-#include <unordered_map>
 
 using namespace std;
 
@@ -26,10 +18,10 @@ void ankit7890()
     {
         for (int i = n; i >= 1; i--)
             cout << i << " ";
-        cout << endl
+        cout << endl;
     }
     else
-        cout << -1 << endl
+        cout << -1 << endl;
 }
 
 int main()
